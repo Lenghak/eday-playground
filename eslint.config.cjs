@@ -1,18 +1,19 @@
 const eslintPluginAstro = require("eslint-plugin-astro");
 const eslintPrettierPlugin = require("eslint-plugin-prettier");
 const eslintConfigPrettier = require("eslint-config-prettier");
+const js = require("@eslint/js");
 
 const globals = require("globals");
 
 /** @type {import('eslint').Linter[]} */
 module.exports = [
-  // js.configs.recommended
   {
     files: ["**/*.{astro}"],
     ...eslintPluginAstro.configs["flat/jsx-a11y-recommended"],
   },
   {
-    files: ["**/*.{mjs,cjs,js,ts}"],
+    files: ["**/*.{mjs,cjs,js}"],
+    ...js.configs.recommended,
     languageOptions: {
       globals: {
         ...globals.es2021,
@@ -27,5 +28,8 @@ module.exports = [
       ...eslintPrettierPlugin.configs.recommended.rules,
       ...eslintConfigPrettier.rules,
     },
+  },
+  {
+    ignores: ["**/node_modules/*"],
   },
 ];

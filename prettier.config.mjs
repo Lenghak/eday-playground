@@ -21,9 +21,15 @@ export default {
       },
     },
     {
-      files: "*.jdon",
+      files: "*.json",
       options: {
         parser: "json",
+      },
+    },
+    {
+      files: "*.scss",
+      options: {
+        parser: "scss",
       },
     },
   ],
