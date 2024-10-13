@@ -1,22 +1,19 @@
-import React from 'react';
+import { Icons } from "@/components/icons";
 
-import type { DropdownMenuProps } from '@radix-ui/react-dropdown-menu';
-
-import { BlockquotePlugin } from '@udecode/plate-block-quote/react';
+import type { DropdownMenuProps } from "@radix-ui/react-dropdown-menu";
+import { BlockquotePlugin } from "@udecode/plate-block-quote/react";
 import {
   collapseSelection,
   getNodeEntries,
   isBlock,
-} from '@udecode/plate-common';
+} from "@udecode/plate-common";
 import {
-  ParagraphPlugin,
   focusEditor,
+  ParagraphPlugin,
   useEditorRef,
   useEditorSelector,
-} from '@udecode/plate-common/react';
-import { HEADING_KEYS } from '@udecode/plate-heading';
-
-import { Icons } from '@/components/icons';
+} from "@udecode/plate-common/react";
+import { HEADING_KEYS } from "@udecode/plate-heading";
 
 import {
   DropdownMenu,
@@ -26,38 +23,38 @@ import {
   DropdownMenuRadioItem,
   DropdownMenuTrigger,
   useOpenState,
-} from './dropdown-menu';
-import { ToolbarButton } from './toolbar';
+} from "./dropdown-menu";
+import { ToolbarButton } from "./toolbar";
 
 const items = [
   {
-    description: 'Paragraph',
+    description: "Paragraph",
     icon: Icons.paragraph,
-    label: 'Paragraph',
+    label: "Paragraph",
     value: ParagraphPlugin.key,
   },
   {
-    description: 'Heading 1',
+    description: "Heading 1",
     icon: Icons.h1,
-    label: 'Heading 1',
+    label: "Heading 1",
     value: HEADING_KEYS.h1,
   },
   {
-    description: 'Heading 2',
+    description: "Heading 2",
     icon: Icons.h2,
-    label: 'Heading 2',
+    label: "Heading 2",
     value: HEADING_KEYS.h2,
   },
   {
-    description: 'Heading 3',
+    description: "Heading 3",
     icon: Icons.h3,
-    label: 'Heading 3',
+    label: "Heading 3",
     value: HEADING_KEYS.h3,
   },
   {
-    description: 'Quote (⌘+⇧+.)',
+    description: "Quote (⌘+⇧+.)",
     icon: Icons.blockquote,
-    label: 'Quote',
+    label: "Quote",
     value: BlockquotePlugin.key,
   },
   // {
@@ -82,7 +79,7 @@ export function TurnIntoDropdownMenu(props: DropdownMenuProps) {
     let allNodesMatchInitialNodeType = false;
     const codeBlockEntries = getNodeEntries(editor, {
       match: (n) => isBlock(editor, n),
-      mode: 'highest',
+      mode: "highest",
     });
     const nodes = Array.from(codeBlockEntries);
 
@@ -106,7 +103,11 @@ export function TurnIntoDropdownMenu(props: DropdownMenuProps) {
   const { icon: SelectedItemIcon, label: selectedItemLabel } = selectedItem;
 
   return (
-    <DropdownMenu modal={false} {...openState} {...props}>
+    <DropdownMenu
+      modal={false}
+      {...openState}
+      {...props}
+    >
       <DropdownMenuTrigger asChild>
         <ToolbarButton
           className="lg:min-w-[130px]"
@@ -119,7 +120,10 @@ export function TurnIntoDropdownMenu(props: DropdownMenuProps) {
         </ToolbarButton>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent className="min-w-0" align="start">
+      <DropdownMenuContent
+        className="min-w-0"
+        align="start"
+      >
         <DropdownMenuLabel>Turn into</DropdownMenuLabel>
 
         <DropdownMenuRadioGroup

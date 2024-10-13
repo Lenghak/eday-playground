@@ -24,18 +24,7 @@
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
         "YoavBls.pretty-ts-errors"
-      ],
-      "settings": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "[astro]": {
-          "editor.defaultFormatter": "esbenp.prettier-vscode"
-        },
-				"editor.formatOnSave": true,
-				"editor.codeActionsOnSave": {
-					"source.fixAll.eslint": "always",
-					"source.organizeImports": "always"
-				}
-      }
+      ]
     }
   }
 
