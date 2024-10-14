@@ -1,12 +1,15 @@
 import { vitePlugin as remix } from "@remix-run/dev";
 
-import { vite } from "@million/lint";
+import { env } from "node:process";
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
+const million =
+  env.NODE_ENV === "development" ? await import("@million/lint") : undefined;
+
 export default defineConfig({
   plugins: [
-    vite(),
+    million?.vite(),
     remix({
       future: {
         v3_fetcherPersist: true,
