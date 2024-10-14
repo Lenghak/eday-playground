@@ -19,7 +19,7 @@ lint:
   disabled:
     - eslint
   enabled:
-    - checkov@3.2.257
+    - checkov@3.2.260
     - git-diff-check
     - markdownlint@0.42.0
     - osv-scanner@1.9.0

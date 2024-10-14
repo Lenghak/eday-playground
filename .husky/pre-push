@@ -1,0 +1,10 @@
+GREEN='\033[0;32m'
+LIGHT_BLUE='\033[1;34m'
+NO_COLOR='\033[0m'
+
+
+tput setaf 1; echo "${LIGHT_BLUE}!${NO_COLOR} Building Bundle"; tput sgr0;
+pnpm run build || exit $
+tput setaf 1; echo "${GREEN}✔${NO_COLOR} Done"; tput sgr0;
+
+tput setaf 1; echo "${GREEN}✔${NO_COLOR} Finished\n"; tput sgr0;
