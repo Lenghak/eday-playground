@@ -1,4 +1,13 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true
+  "editor.defaultFormatter": "trunk.io",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always",
+    "source.removeUnusedImports": "always",
+  },
+  "[ignore]": {
+    "editor.defaultFormatter": "trunk.io"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "trunk.io"
+  }
 }

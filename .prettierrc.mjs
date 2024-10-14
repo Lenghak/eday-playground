@@ -37,5 +37,17 @@ export default {
       files: "*.json",
       options: { parser: "json" },
     },
+    {
+      files: ["*.yml", "*.yaml"],
+      options: {
+        parser: "yaml",
+      },
+    },
+    {
+      files: "*.md",
+      options: {
+        parser: "markdown",
+      },
+    },
   ],
 };
