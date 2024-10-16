@@ -8,15 +8,16 @@ export default {
     extend: {
       fontFamily: {
         sans: [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
+          "'Source Sans 3'",
           "sans-serif",
-          'Apple Color Emoji"',
-          'Segoe UI Emoji"',
-          'Segoe UI Symbol"',
-          'Noto Color Emoji"',
+          "system-ui",
+          "'Apple Color Emoji'",
+          "'Segoe UI Emoji'",
+          "'Segoe UI Symbol'",
+          "'Noto Color Emoji'",
         ],
+        serif: ["'Source Serif 4'", "sans-serif"],
+        mono: ["'Source Code Pro'", "monospace"],
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -9,5 +9,8 @@
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "trunk.io"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }

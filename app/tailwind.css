@@ -56,6 +56,7 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+
   [data-registry="plate-ui"] {
     --background: 0 0% 100%;
     --foreground: 20 14.3% 4.1%;
@@ -115,6 +116,11 @@
   * {
     @apply border-border;
   }
+
+  html {
+    @apply font-sans antialiased;
+  }
+
   body {
     @apply bg-background text-foreground;
   }
