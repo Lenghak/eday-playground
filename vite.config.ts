@@ -1,5 +1,6 @@
 import { vitePlugin as remix } from "@remix-run/dev";
 
+import { vercelPreset } from "@vercel/remix/vite";
 import { env } from "node:process";
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
@@ -9,6 +10,7 @@ const million =
 
 export default defineConfig({
   plugins: [
+    vercelPreset(),
     million?.vite(),
     remix({
       future: {
