@@ -1,19 +1,19 @@
-GREEN='\033[0;32m'
-LIGHT_BLUE='\033[1;34m'
-NO_COLOR='\033[0m'
+GREEN='\033[0;32m';
+LIGHT_BLUE='\033[1;34m';
+NO_COLOR='\033[0m';
 
 
-tput setaf 1; echo "${LIGHT_BLUE}!${NO_COLOR} Checking Lint"; tput sgr0;
+tput setaf 1; echo -e "${LIGHT_BLUE}!${NO_COLOR} Checking Lint"; tput sgr0;
 pnpm run lint --fix || exit $
-tput setaf 1; echo "${GREEN}✔${NO_COLOR} Done"; tput sgr0;
+tput setaf 1; echo -e "${GREEN}✔${NO_COLOR} Done"; tput sgr0;
 
-tput setaf 1; echo "${LIGHT_BLUE}!${NO_COLOR} Prettier is Formatting Staged Files"; tput sgr0;
+tput setaf 1; echo -e "${LIGHT_BLUE}!${NO_COLOR} Prettier is Formatting Staged Files"; tput sgr0;
 pnpm lint-staged
 
-tput setaf 1; echo "${GREEN} Formatted"
-tput setaf 1; echo "${GREEN}✔${NO_COLOR} Done"; tput sgr0;
+tput setaf 1; echo -e "${GREEN} Formatted"
+tput setaf 1; echo -e "${GREEN}✔${NO_COLOR} Done"; tput sgr0;
 
-tput setaf 1; echo "${LIGHT_BLUE}!${NO_COLOR} Checking for Circular Dependency"; tput sgr0;
+tput setaf 1; echo -e "${LIGHT_BLUE}!${NO_COLOR} Checking for Circular Dependency"; tput sgr0;
 pnpm cruise || exit $
 
-tput setaf 1; echo "${GREEN}✔${NO_COLOR} Finished\n"; tput sgr0;
+tput setaf 1; echo -e "${GREEN}✔${NO_COLOR} Finished\n"; tput sgr0;
