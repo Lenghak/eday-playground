@@ -25,35 +25,36 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        background: "hsl(var(--background)/var(--tw-bg-opacity))",
+        foreground: "hsl(var(--foreground)/var(--tw-text-opacity))",
         card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+          DEFAULT: "hsl(var(--card)/var(--tw-bg-opacity))",
+          foreground: "hsl(var(--card-foreground)/var(--tw-text-opacity))",
         },
         popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
+          DEFAULT: "hsl(var(--popover)/var(--tw-bg-opacity))",
+          foreground: "hsl(var(--popover-foreground)/var(--tw-text-opacity))",
         },
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "hsl(var(--primary)/var(--tw-bg-opacity))",
+          foreground: "hsl(var(--primary-foreground)/var(--tw-text-opacity))",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "hsl(var(--secondary)/var(--tw-bg-opacity))",
+          foreground: "hsl(var(--secondary-foreground)/var(--tw-text-opacity))",
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+          DEFAULT: "hsl(var(--muted)/var(--tw-bg-opacity))",
+          foreground: "hsl(var(--muted-foreground)/var(--tw-text-opacity))",
         },
         accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
+          DEFAULT: "hsl(var(--accent)/var(--tw-bg-opacity))",
+          foreground: "hsl(var(--accent-foreground)/var(--tw-text-opacity))",
         },
         destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+          DEFAULT: "hsl(var(--destructive)/var(--tw-bg-opacity))",
+          foreground:
+            "hsl(var(--destructive-foreground)/var(--tw-text-opacity))",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -83,10 +84,15 @@ export default {
             height: "0",
           },
         },
+        shine: {
+          from: { backgroundPosition: "200% 0" },
+          to: { backgroundPosition: "-200% 0" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        shine: "shine 8s ease-in-out infinite",
       },
     },
   },

@@ -1,6 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
 
-import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 export const meta: MetaFunction = () => {
   return [
@@ -11,8 +11,40 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="flex h-screen items-center justify-center">
-      <Button>This is a button</Button>
+    <div className="container flex h-screen flex-wrap items-center justify-center gap-6">
+      <Badge
+        dot
+        variant={"soft"}
+        color={"emerald"}
+        className="rounded-full font-bold"
+      >
+        This is a badge
+      </Badge>
+
+      <Badge
+        dot
+        variant={"soft"}
+        color={"fuchsia"}
+        className="rounded-full font-bold"
+      >
+        This is a badge
+      </Badge>
+
+      <Badge
+        variant={"soft"}
+        color={"amber"}
+        className="rounded-full font-bold"
+      >
+        This is a badge
+      </Badge>
+
+      <Badge
+        variant={"soft"}
+        color={"violet"}
+        className="rounded-full font-bold"
+      >
+        This is a badge
+      </Badge>
     </div>
   );
 }
