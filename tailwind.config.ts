@@ -25,34 +25,34 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
-        background: "hsl(var(--background)/var(--tw-bg-opacity))",
+        background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground)/var(--tw-text-opacity))",
         card: {
-          DEFAULT: "hsl(var(--card)/var(--tw-bg-opacity))",
+          DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground)/var(--tw-text-opacity))",
         },
         popover: {
-          DEFAULT: "hsl(var(--popover)/var(--tw-bg-opacity))",
+          DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground)/var(--tw-text-opacity))",
         },
         primary: {
-          DEFAULT: "hsl(var(--primary)/var(--tw-bg-opacity))",
+          DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground)/var(--tw-text-opacity))",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary)/var(--tw-bg-opacity))",
+          DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground)/var(--tw-text-opacity))",
         },
         muted: {
-          DEFAULT: "hsl(var(--muted)/var(--tw-bg-opacity))",
+          DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground)/var(--tw-text-opacity))",
         },
         accent: {
-          DEFAULT: "hsl(var(--accent)/var(--tw-bg-opacity))",
+          DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground)/var(--tw-text-opacity))",
         },
         destructive: {
-          DEFAULT: "hsl(var(--destructive)/var(--tw-bg-opacity))",
+          DEFAULT: "hsl(var(--destructive))",
           foreground:
             "hsl(var(--destructive-foreground)/var(--tw-text-opacity))",
         },

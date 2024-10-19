@@ -7,7 +7,7 @@ cli:
 plugins:
   sources:
     - id: trunk
-      ref: v1.6.3
+      ref: v1.6.4
       uri: https://github.com/trunk-io/plugins
 # Many linters and tools depend on runtimes - configure them here. (https://docs.trunk.io/runtimes)
 runtimes:
@@ -19,13 +19,14 @@ lint:
   disabled:
     - eslint
   enabled:
-    - checkov@3.2.260
+    - svgo@3.3.2
+    - checkov@3.2.267
     - git-diff-check
     - markdownlint@0.42.0
     - osv-scanner@1.9.0
     - oxipng@9.1.2
     - prettier@3.3.3
-    - trufflehog@3.82.8
+    - trufflehog@3.82.11
     - yamllint@1.35.1
   ignore:
     - linters: [ALL]

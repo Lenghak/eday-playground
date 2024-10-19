@@ -121,13 +121,13 @@ export default [
       },
     },
     rules: {
+      "import/no-named-as-default-member": 'off',
       "@typescript-eslint/no-unused-vars": [
         "warn",
         { argsIgnorePattern: "^_" },
       ],
     },
-  },
-  {
+  },  {
     files: ["**/eslint.config.mjs"],
 
     languageOptions: {
