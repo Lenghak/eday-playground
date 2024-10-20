@@ -6,8 +6,11 @@ import * as CheckboxPrimitive from "@radix-ui/react-checkbox";
 import { cva, type VariantProps } from "class-variance-authority";
 import { Check } from "lucide-react";
 
+// Memoize the Check component
+const MemoizedCheck = React.memo(Check);
+
 const checkboxVariants = cva(
-  "peer h-4 w-4 shrink-0 rounded-sm border ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:border-primary",
+  "peer h-4 w-4 shrink-0 rounded-sm border ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:border-primary transition-all",
   {
     variants: {
       color: {
@@ -78,7 +81,7 @@ const Checkbox = React.forwardRef<
     <CheckboxPrimitive.Indicator
       className={cn("flex items-center justify-center text-current")}
     >
-      <Check className="h-3 w-3" />
+      <MemoizedCheck className="h-3 w-3 animate-check-mark stroke-[0.15rem]" />
     </CheckboxPrimitive.Indicator>
   </CheckboxPrimitive.Root>
 ));

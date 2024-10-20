@@ -12,7 +12,7 @@
     "typecheck": "tsc"
   },
   "lint-staged": {
-    "*": "pnpm trunk fmt"
+    "*.{ts,tsx,css,json}": "pnpm trunk fmt"
   },
   "dependencies": {
     "@ariakit/react": "^0.4.13",

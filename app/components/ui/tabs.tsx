@@ -3,7 +3,7 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 import * as TabsPrimitive from "@radix-ui/react-tabs";
-import { string } from "prop-types";
+import PropTypes from "prop-types";
 
 const Tabs = TabsPrimitive.Root;
 
@@ -22,7 +22,7 @@ const TabsList = React.forwardRef<
 ));
 TabsList.displayName = TabsPrimitive.List.displayName;
 TabsList.propTypes = {
-  className: string,
+  className: PropTypes.string,
 };
 
 const TabsTrigger = React.forwardRef<
@@ -40,7 +40,7 @@ const TabsTrigger = React.forwardRef<
 ));
 TabsTrigger.displayName = TabsPrimitive.Trigger.displayName;
 TabsTrigger.propTypes = {
-  className: string,
+  className: PropTypes.string,
 };
 
 const TabsContent = React.forwardRef<
@@ -58,7 +58,7 @@ const TabsContent = React.forwardRef<
 ));
 TabsContent.displayName = TabsPrimitive.Content.displayName;
 TabsContent.propTypes = {
-  className: string,
+  className: PropTypes.string,
 };
 
 export { Tabs, TabsList, TabsTrigger, TabsContent };

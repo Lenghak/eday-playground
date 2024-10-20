@@ -1,4 +1,5 @@
 import * as React from "react";
+import { memo } from "react";
 
 import { cn } from "@/lib/utils";
 
@@ -7,33 +8,16 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { Circle } from "lucide-react";
 import PropTypes from "prop-types";
 
-const RadioGroupItem = React.forwardRef<
-  React.ElementRef<typeof RadioGroupPrimitive.Item>,
-  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitive.Item> &
-    VariantProps<typeof radioVariants>
->(({ className, color, ...props }, ref) => (
-  <RadioGroupPrimitive.Item
-    ref={ref}
-    className={cn(radioVariants({ color, className }))}
-    {...props}
-  >
-    <RadioGroupPrimitive.Indicator className="flex items-center justify-center">
-      <Circle className="h-2.5 w-2.5 fill-current text-current" />
-    </RadioGroupPrimitive.Indicator>
-  </RadioGroupPrimitive.Item>
-));
-RadioGroupItem.displayName = RadioGroupPrimitive.Item.displayName;
-
 const radioVariants = cva(
   "aspect-square h-4 w-4 rounded-full border border-primary text-primary ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
   {
     variants: {
       color: {
-        default: "border-primary text-primary focus-visible:ring-primary",
+        default: "border-primary-500 text-primary focus-visible:ring-primary",
         secondary:
-          "border-secondary text-secondary focus-visible:ring-secondary",
+          "border-secondary-500 text-secondary focus-visible:ring-secondary",
         destructive:
-          "border-destructive text-destructive focus-visible:ring-destructive",
+          "border-destructive-500 text-destructive focus-visible:ring-destructive",
         slate: "border-slate-500 text-slate-500 focus-visible:ring-slate-500",
         gray: "border-gray-500 text-gray-500 focus-visible:ring-gray-500",
         zinc: "border-zinc-500 text-zinc-500 focus-visible:ring-zinc-500",
@@ -72,6 +56,29 @@ const radioVariants = cva(
   },
 );
 
+const RadioGroupItem = memo(
+  React.forwardRef<
+    React.ElementRef<typeof RadioGroupPrimitive.Item>,
+    React.ComponentPropsWithoutRef<typeof RadioGroupPrimitive.Item> &
+      VariantProps<typeof radioVariants>
+    // eslint-disable-next-line react/prop-types
+  >(({ className, color, ...props }, ref) => (
+    <RadioGroupPrimitive.Item
+      ref={ref}
+      className={cn(radioVariants({ color, className }))}
+      {...props}
+    >
+      <RadioGroupPrimitive.Indicator className="flex items-center justify-center">
+        <Circle className="h-2.5 w-2.5 animate-scale-in fill-current text-current" />
+      </RadioGroupPrimitive.Indicator>
+    </RadioGroupPrimitive.Item>
+  )),
+);
+RadioGroupItem.displayName = RadioGroupPrimitive.Item.displayName;
+RadioGroupItem.prototype = {
+  className: PropTypes.string,
+};
+
 const RadioGroup = React.forwardRef<
   React.ElementRef<typeof RadioGroupPrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof RadioGroupPrimitive.Root>
@@ -88,4 +95,5 @@ RadioGroup.displayName = RadioGroupPrimitive.Root.displayName;
 RadioGroup.propTypes = {
   className: PropTypes.string,
 };
+
 export { RadioGroup, RadioGroupItem };
