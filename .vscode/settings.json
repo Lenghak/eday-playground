@@ -12,5 +12,7 @@
   },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "localaipilot.standalone.ollamaCodeModel": "phi3.5:latest",
+  "localaipilot.standalone.ollamaModel": "phi3.5:latest"
 }

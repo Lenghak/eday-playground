@@ -39,7 +39,8 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  .dark {
+  .dark,
+  :root[class~="dark"] {
     --background: 20 14.3% 4.1%;
     --foreground: 60 9.1% 97.8%;
     --card: 20 14.3% 4.1%;
@@ -136,11 +137,11 @@
   }
 
   html {
-    @apply font-sans antialiased;
+    @apply flex min-h-dvh w-full overflow-hidden bg-background p-2 font-sans antialiased;
   }
 
   body {
-    @apply flex w-screen flex-col items-center bg-background text-foreground;
+    @apply flex h-[calc(100dvh-1rem)] max-h-full w-full flex-col items-center overflow-auto rounded-md border bg-card text-foreground;
   }
 }
 
