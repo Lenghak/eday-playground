@@ -18,6 +18,13 @@
     "hooks": "@/hooks"
   },
   "registries": {
+    "magic-ui": {
+      "aliases": {
+        "ui": "@/components/magic-ui"
+      },
+      "style": "default",
+      "url": "https://magicui.design/r"
+    },
     "plate-ui": {
       "aliases": {
         "ui": "@/components/plate-ui"

@@ -1,8 +1,10 @@
 {
   "editor.defaultFormatter": "trunk.io",
+  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "always",
-    "source.removeUnusedImports": "always",
+    "source.fixAll.eslint": "always",
+    "source.removeUnusedImports": "always"
   },
   "[ignore]": {
     "editor.defaultFormatter": "trunk.io"
@@ -13,6 +15,47 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "localaipilot.standalone.ollamaCodeModel": "phi3.5:latest",
-  "localaipilot.standalone.ollamaModel": "phi3.5:latest"
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "astro", // Enable .astro
+    "typescript", // Enable .ts
+    "typescriptreact" // Enable .tsx
+  ],
+  "material-icon-theme.folders.customClones": [
+    {
+      "name": "users-admin",
+      "base": "admin",
+      "color": "light-green-500",
+      "lightColor": "light-green-700",
+      "folderNames": ["users"]
+    },
+    {
+      "name": "roles-admin",
+      "base": "admin",
+      "color": "purple-400",
+      "folderNames": ["roles"]
+    },
+    {
+      "name": "features-modules",
+      "base": "plugin",
+      "color": "purple-400",
+      "folderNames": ["feature", "features"]
+    },
+    {
+      "name": "plate-ui",
+      "base": "ui",
+      "color": "gray",
+      "folderNames": ["plate-ui"]
+    },
+    {
+      "name": "server-actions",
+      "base": "functions",
+      "color": "green-600",
+      "folderNames": ["action", "actions"]
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import tailwindAnimate from "tailwindcss-animate";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
   darkMode: ["class"],
@@ -105,11 +105,14 @@ export default {
           },
         },
         shine: {
-          from: {
-            backgroundPosition: "200% 0",
+          "0%": {
+            "background-position": "0% 0%",
+          },
+          "50%": {
+            "background-position": "100% 100%",
           },
           to: {
-            backgroundPosition: "-200% 0",
+            "background-position": "0% 0%",
           },
         },
         "scale-in": {
@@ -125,10 +128,10 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "check-mark": "check-mark 0.2s ease-out",
-        shine: "shine 8s ease-in-out infinite",
+        shine: "shine var(--duration) infinite linear",
         "scale-in": "scale-in 0.2s ease-out",
       },
     },
   },
-  plugins: [tailwindAnimate],
+  plugins: [tailwindcssAnimate],
 } satisfies Config;

@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    // ...
+    "jsx.d.ts",
+    "tailwind.config.ts",
+    "astro.config.mjs",
+    ".eslintrc.cjs"
+  ]
+}

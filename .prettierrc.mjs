@@ -12,10 +12,10 @@ export default {
   plugins: [
     "@trivago/prettier-plugin-sort-imports",
     "prettier-plugin-tailwindcss",
+    "prettier-plugin-astro",
   ],
   importOrder: [
     "^react(.*)$",
-    "^@remix-run/(.*)$",
     "^@/modules/(.*)$",
     "^@/components/(.*)$",
     "^@/hooks/(.*)$",
@@ -29,6 +29,12 @@ export default {
   importOrderSortSpecifiers: true,
   importOrderCaseInsensitive: true,
   overrides: [
+    {
+      files: ["*.astro", "*.astro"],
+      options: {
+        parser: "astro",
+      },
+    },
     {
       files: ["*.scss", "*.css"],
       options: { parser: "scss" },
