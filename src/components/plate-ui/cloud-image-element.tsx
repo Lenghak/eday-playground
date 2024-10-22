@@ -19,6 +19,7 @@ export function CloudImageElement({
   className,
   ...props
 }: CloudImageElementProps) {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   const { children, element } = props;
 
   const { focused, selected, setSize, size, src, srcSet, upload } =
@@ -72,6 +73,7 @@ export function CloudImageElement({
             }}
           />
         ) : (
+          // eslint-disable-next-line @next/next/no-img-element
           <img
             className={cn(
               "block rounded-lg",

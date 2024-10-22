@@ -36,7 +36,7 @@ export function CloudToolbarButtons() {
       </button>
       <button
         style={buttonStyle}
-        onClick={finishUploads}
+        onClick={() => void finishUploads()}
         type="button"
       >
         Await Finish Uploads

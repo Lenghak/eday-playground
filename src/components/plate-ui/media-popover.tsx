@@ -44,7 +44,7 @@ export function MediaPopover({ children, plugin }: MediaPopoverProps) {
     if (!isOpen && isEditing) {
       floatingMediaActions.isEditing(false);
     }
-  }, [isOpen]);
+  }, [isEditing, isOpen]);
 
   const element = useElement();
   const { props: buttonProps } = useRemoveNodeButton({ element });

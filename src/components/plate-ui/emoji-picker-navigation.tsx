@@ -1,11 +1,6 @@
-import { useMemo } from "react";
-
 import { cn } from "@udecode/cn";
 import type { EmojiCategoryList } from "@udecode/plate-emoji";
-import type {
-  IEmojiFloatingLibrary,
-  UseEmojiPickerType,
-} from "@udecode/plate-emoji/react";
+import type { UseEmojiPickerType } from "@udecode/plate-emoji/react";
 
 import { Button } from "./button";
 import {
@@ -22,23 +17,6 @@ export type EmojiPickerNavigationProps = {
   "emojiLibrary" | "focusedCategory" | "i18n" | "icons"
 >;
 
-const getBarProperty = (
-  emojiLibrary: IEmojiFloatingLibrary,
-  focusedCategory?: EmojiCategoryList,
-) => {
-  let width = 0;
-  let position = 0;
-
-  if (focusedCategory) {
-    width = 100 / emojiLibrary.getGrid().size;
-    position = focusedCategory
-      ? emojiLibrary.indexOf(focusedCategory) * 100
-      : 0;
-  }
-
-  return { position, width };
-};
-
 export function EmojiPickerNavigation({
   emojiLibrary,
   focusedCategory,
@@ -46,11 +24,6 @@ export function EmojiPickerNavigation({
   icons,
   onClick,
 }: EmojiPickerNavigationProps) {
-  const { position, width } = useMemo(
-    () => getBarProperty(emojiLibrary, focusedCategory),
-    [emojiLibrary, focusedCategory],
-  );
-
   return (
     <TooltipProvider delayDuration={500}>
       <nav
@@ -88,16 +61,6 @@ export function EmojiPickerNavigation({
                 </TooltipContent>
               </Tooltip>
             ))}
-          <div
-            className={cn(
-              "absolute -bottom-1.5 left-0 h-0.5 w-full rounded-t-lg bg-accent opacity-100 transition-transform duration-200",
-            )}
-            style={{
-              transform: `translateX(${position}%)`,
-              visibility: `${focusedCategory ? "visible" : "hidden"}`,
-              width: `${width}%`,
-            }}
-          />
         </div>
       </nav>
     </TooltipProvider>

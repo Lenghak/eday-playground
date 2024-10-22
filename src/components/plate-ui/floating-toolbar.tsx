@@ -1,10 +1,12 @@
 "use client";
 
+import { cn } from "@udecode/cn";
 import {
   useComposedRef,
   useEditorId,
   useEditorRef,
   useEventEditorSelectors,
+  withRef,
 } from "@udecode/plate-common/react";
 import {
   flip,

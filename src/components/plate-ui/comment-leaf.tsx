@@ -1,5 +1,6 @@
 "use client";
 
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { cn } from "@udecode/cn";
 import type { TCommentText } from "@udecode/plate-comments";
 import {

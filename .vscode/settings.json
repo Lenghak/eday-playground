@@ -1,15 +1,6 @@
 {
-  "editor.defaultFormatter": "trunk.io",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "[ignore]": {
-    "editor.defaultFormatter": "trunk.io"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "trunk.io"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "eslint.validate": [
     "javascript",
     "javascriptreact",

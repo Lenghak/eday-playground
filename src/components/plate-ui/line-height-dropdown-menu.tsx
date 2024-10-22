@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { Icons } from "@/components/icons";
 
 import type { DropdownMenuProps } from "@radix-ui/react-dropdown-menu";

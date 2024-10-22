@@ -4,9 +4,7 @@ import { useFocused, useSelected } from "slate-react";
 import { PlateElement } from "./plate-element";
 
 export const HrElement = withRef<typeof PlateElement>(
-  ({ className, nodeProps, ...props }, ref) => {
-    const { children } = props;
-
+  ({ className, nodeProps, children, ...props }, ref) => {
     const selected = useSelected();
     const focused = useFocused();
 

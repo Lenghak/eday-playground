@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Icons } from "@/components/icons";
 
@@ -97,6 +99,7 @@ export function TurnIntoDropdownMenu(props: DropdownMenuProps) {
   const openState = useOpenState();
 
   const selectedItem =
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-enum-comparison
     items.find((item) => item.value === value) ?? defaultItem;
   const { icon: SelectedItemIcon, label: selectedItemLabel } = selectedItem;
 

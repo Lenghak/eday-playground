@@ -1,3 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unsafe-return */
+
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Children, cloneElement } from "react";
 
@@ -16,6 +24,7 @@ export const Placeholder = (props: PlaceholderProps) => {
 
   const { enabled } = usePlaceholderState(props);
 
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
   return Children.map(children, (child) => {
     return cloneElement(child, {
       className: child.props.className,

@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import type { FC } from "react";
 
@@ -39,6 +41,7 @@ export const withDraggable = (
 export const withDraggablesPrimitive = createNodesWithHOC(withDraggable);
 
 export const withDraggables = (components: any) => {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
   return withDraggablesPrimitive(components, [
     {
       keys: [

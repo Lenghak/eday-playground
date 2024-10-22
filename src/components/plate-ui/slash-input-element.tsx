@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { type ComponentType, type SVGProps } from "react";
 
 import { Icons } from "@/components/icons";

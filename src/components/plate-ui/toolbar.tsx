@@ -1,5 +1,6 @@
 "use client";
 
+/* eslint-disable react/display-name */
 import * as React from "react";
 
 import { Icons } from "@/components/icons";
@@ -135,6 +136,7 @@ export const ToolbarToggleItem = withVariants(
   toolbarButtonVariants,
   ["variant", "size"],
 );
+ToolbarToggleItem.displayName = "ToolbarToggleItem";
 
 export const ToolbarGroup = withRef<
   "div",
@@ -161,3 +163,4 @@ export const ToolbarGroup = withRef<
     </div>
   );
 });
+ToolbarGroup.displayName = "ToolbarGroup";

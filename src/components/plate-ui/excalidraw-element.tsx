@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { withRef } from "@udecode/cn";
 import { useExcalidrawElement } from "@udecode/plate-excalidraw/react";

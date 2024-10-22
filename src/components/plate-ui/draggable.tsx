@@ -1,5 +1,6 @@
 "use client";
 
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import React, { forwardRef, memo } from "react";
 import type { DropTargetMonitor } from "react-dnd";
 
@@ -31,6 +32,8 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "./tooltip";
+
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 

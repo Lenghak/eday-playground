@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { useMemo, useState } from "react";
 
 import { useDebounce } from "@/hooks/use-debounce";

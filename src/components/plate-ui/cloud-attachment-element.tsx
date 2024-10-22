@@ -19,16 +19,17 @@ export type CloudAttachmentElementProps =
 
 export function CloudAttachmentElement({
   className,
+  element,
+  children,
   ...props
 }: CloudAttachmentElementProps) {
-  const { children, element } = props;
-
   const { focused, selected, upload } = useCloudAttachmentElementState({
     element,
   });
 
   return (
     <PlateElement
+      element={element}
       className={cn(
         "relative my-4 flex h-10 max-w-sm items-center gap-2 rounded-lg border border-border bg-background p-4",
         focused && selected && "border-blue-400 shadow-[0_0_1px_3px_#60a5fa]",

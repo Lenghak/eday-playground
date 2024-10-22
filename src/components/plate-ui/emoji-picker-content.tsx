@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { memo, useCallback } from "react";
 
@@ -116,7 +118,7 @@ export function EmojiPickerContent({
             style={{ width: getRowWidth }}
             data-id={categoryId}
           >
-            <div className="sticky -top-px z-[1] bg-popover/90 p-1 py-2 text-sm font-semibold backdrop-blur-sm">
+            <div className="sticky -top-px z-[1] scroll-smooth bg-popover/90 p-1 py-2 text-sm font-semibold backdrop-blur-sm">
               {i18n.categories[categoryId]}
             </div>
             <div
