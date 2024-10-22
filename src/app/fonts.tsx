@@ -1,4 +1,5 @@
 import {
+  Playfair_Display,
   Source_Code_Pro,
   Source_Sans_3,
   Source_Serif_4,
@@ -17,6 +18,12 @@ export const serif = Source_Serif_4({
 });
 
 export const mono = Source_Code_Pro({
+  subsets: ["latin"],
+  preload: true,
+  display: "swap",
+});
+
+export const display = Playfair_Display({
   subsets: ["latin"],
   preload: true,
   display: "swap",

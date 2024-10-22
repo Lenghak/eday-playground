@@ -23,7 +23,7 @@
     --border: 20 5.9% 90%;
     --input: 20 5.9% 90%;
     --ring: 24.6 95% 53.1%;
-    --radius: 0.5rem;
+    --radius: 0.75rem;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
@@ -100,7 +100,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem;
+    --radius: 0.75rem;
   }
 
   [data-registry="plate-ui"].dark {
@@ -137,10 +137,10 @@
   }
 
   html {
-    @apply flex min-h-dvh w-full overflow-hidden bg-background p-2 font-sans antialiased;
+    @apply flex min-h-dvh w-full overflow-hidden bg-card/50 p-2 font-sans antialiased;
   }
 
   body {
-    @apply flex h-[calc(100dvh-1rem)] max-h-full w-full flex-col items-center overflow-auto rounded-md border bg-card text-foreground shadow-lg;
+    @apply flex h-[calc(100dvh-1rem)] max-h-full w-full flex-col items-center overflow-auto rounded-md border bg-background text-foreground shadow-lg;
   }
 }

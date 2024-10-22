@@ -1,6 +1,8 @@
 import type { ComponentPropsWithoutRef } from "react";
 
-import { Flex, type FlexProps } from "@/components/ui/flex";
+import { ThemeToggle } from "@/components/custom/theme-toggle";
+import { Container } from "@/components/ui/container";
+import { type FlexProps } from "@/components/ui/flex";
 
 import { cn } from "@/lib/utils";
 
@@ -13,15 +15,13 @@ export function PreAuthLayout({
   ...props
 }: PreAuthLayoutProps) {
   return (
-    <Flex
-      direction="column"
-      items="center"
-      justify="center"
-      as={"section"}
-      className={cn(className)}
+    <Container
+      as={"main"}
+      className={cn("h-full", className)}
       {...props}
     >
+      <ThemeToggle className="absolute right-4 top-4 rounded-full" />
       {children}
-    </Flex>
+    </Container>
   );
 }

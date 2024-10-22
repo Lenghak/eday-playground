@@ -107,6 +107,11 @@ export default {
             height: "0",
           },
         },
+        "border-beam": {
+          "100%": {
+            "offset-distance": "100%",
+          },
+        },
         "check-mark": {
           from: {
             opacity: "0",
@@ -140,6 +145,7 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
         "check-mark": "check-mark 0.2s ease-out",
         shine: "shine var(--duration) infinite linear",
         "scale-in": "scale-in 0.2s ease-out",

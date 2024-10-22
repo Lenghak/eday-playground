@@ -6,7 +6,7 @@ import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center justify-center rounded-full rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
@@ -72,19 +72,36 @@ const buttonVariants = cva(
         className: "hover:bg-primary/90",
       },
       {
+        variant: "soft",
+        color: "default",
+        className: "bg-primary/20 text-primary hover:bg-primary/30",
+      },
+      {
+        variant: "outline",
+        color: "default",
+        className: "bg-primary/20 text-primary hover:bg-primary/30",
+      },
+      {
         variant: "filled",
         color: "secondary",
         className: "hover:bg-secondary/80",
       },
       {
+        variant: "outline",
+        color: "secondary",
+        className:
+          "bg-transparent text-secondary-foreground hover:bg-secondary/30",
+      },
+      {
+        variant: "link",
+        color: "secondary",
+        className:
+          "bg-background text-secondary-foreground hover:text-secondary-foreground/75",
+      },
+      {
         variant: "filled",
         color: "destructive",
         className: "hover:bg-destructive/90",
-      },
-      {
-        variant: "soft",
-        color: "default",
-        className: "bg-primary/20 text-primary hover:bg-primary/30",
       },
       {
         variant: "soft",

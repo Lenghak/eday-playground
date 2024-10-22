@@ -16,7 +16,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
-        <title>Home | Insight the Mind</title>
+        <title>Home | Le-Insight</title>
         <meta charSet="utf-8" />
         <meta
           name="viewport"
@@ -36,7 +36,7 @@ export default function RootLayout({
         />
         <meta
           property="og:title"
-          content="Home | Insight the Mind"
+          content="Home | Le-Insight"
         />
         <meta
           property="og:description"
@@ -52,7 +52,7 @@ export default function RootLayout({
         />
         <meta
           name="twitter:title"
-          content="Home | Insight the Mind"
+          content="Home | Le-Insight"
         />
         <meta
           name="twitter:description"
