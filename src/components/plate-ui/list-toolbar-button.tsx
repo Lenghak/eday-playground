@@ -1,10 +1,11 @@
+import { Icons } from "@/components/icons";
+
 import { withRef } from "@udecode/cn";
 import {
   BulletedListPlugin,
   useListToolbarButton,
   useListToolbarButtonState,
 } from "@udecode/plate-list/react";
-import { Icons } from "src/components/icons";
 
 import { ToolbarButton } from "./toolbar";
 

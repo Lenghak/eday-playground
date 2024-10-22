@@ -1,5 +1,7 @@
 "use client";
 
+import { Icons } from "@/components/icons";
+
 import { cn } from "@udecode/cn";
 import {
   type TCloudAttachmentElement,
@@ -9,7 +11,6 @@ import {
   PlateElement,
   type PlateElementProps,
 } from "@udecode/plate-common/react";
-import { Icons } from "src/components/icons";
 
 import { StatusBar } from "./cloud-status-bar";
 

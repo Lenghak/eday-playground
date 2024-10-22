@@ -1,11 +1,20 @@
+import fluid, { extract, fontSize, screens } from "fluid-tailwind";
 import type { Config } from "tailwindcss";
 import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
   darkMode: ["class"],
-  content: ["./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}"],
+  content: { files: ["./src/**/*.{js,jsx,ts,tsx}"], extract },
   theme: {
     extend: {
+      screens: {
+        ...screens,
+        xxs: "21.875rem",
+        xs: "29.7rem",
+        "3xl": "100rem",
+        "4xl": "112.5rem",
+        "5xl": "118.75rem",
+      },
       fontFamily: {
         sans: [
           "'Source Sans 3'",
@@ -18,6 +27,10 @@ export default {
         ],
         serif: ["'Source Serif 4'", "sans-serif"],
         mono: ["'Source Code Pro'", "monospace"],
+      },
+      fontSize: {
+        ...fontSize,
+        xxs: ["0.5rem", "1rem"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -133,5 +146,5 @@ export default {
       },
     },
   },
-  plugins: [tailwindcssAnimate],
+  plugins: [fluid, tailwindcssAnimate],
 } satisfies Config;

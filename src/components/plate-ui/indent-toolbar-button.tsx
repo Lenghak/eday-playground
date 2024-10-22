@@ -1,6 +1,7 @@
+import { Icons } from "@/components/icons";
+
 import { withRef } from "@udecode/cn";
 import { useIndentButton } from "@udecode/plate-indent/react";
-import { Icons } from "src/components/icons";
 
 import { ToolbarButton } from "./toolbar";
 

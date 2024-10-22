@@ -1,6 +1,6 @@
 import React from "react";
 
-import { cn } from "src/lib/utils";
+import { cn } from "@/lib/utils";
 
 export interface FlexProps extends React.HTMLAttributes<HTMLElement> {
   as?: React.ElementType;

@@ -1,5 +1,6 @@
+import { cn } from "@/lib/utils";
+
 import { PlateLeaf, withRef } from "@udecode/plate-common/react";
-import { cn } from "src/lib/utils";
 
 export const KbdLeaf = withRef<typeof PlateLeaf>(
   ({ children, className, ...props }, ref) => (

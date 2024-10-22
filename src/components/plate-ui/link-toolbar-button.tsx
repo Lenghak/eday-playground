@@ -1,9 +1,10 @@
+import { Icons } from "@/components/icons";
+
 import { withRef } from "@udecode/cn";
 import {
   useLinkToolbarButton,
   useLinkToolbarButtonState,
 } from "@udecode/plate-link/react";
-import { Icons } from "src/components/icons";
 
 import { ToolbarButton } from "./toolbar";
 

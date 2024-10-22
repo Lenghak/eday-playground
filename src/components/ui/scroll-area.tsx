@@ -1,8 +1,9 @@
 import * as React from "react";
 
+import { cn } from "@/lib/utils";
+
 import * as ScrollAreaPrimitive from "@radix-ui/react-scroll-area";
 import { oneOf, string } from "prop-types";
-import { cn } from "src/lib/utils";
 
 const ScrollArea = React.forwardRef<
   React.ElementRef<typeof ScrollAreaPrimitive.Root>,

@@ -1,11 +1,12 @@
 import { type ComponentType, type SVGProps } from "react";
 
+import { Icons } from "@/components/icons";
+
 import { withRef } from "@udecode/cn";
 import type { PlateEditor } from "@udecode/plate-common/react";
 import { DatePlugin } from "@udecode/plate-date/react";
 import { HEADING_KEYS } from "@udecode/plate-heading";
 import { ListStyleType, toggleIndentList } from "@udecode/plate-indent-list";
-import { Icons } from "src/components/icons";
 
 import {
   InlineCombobox,

@@ -3,6 +3,8 @@
 import React, { forwardRef, memo } from "react";
 import type { DropTargetMonitor } from "react-dnd";
 
+import { Icons } from "@/components/icons";
+
 import { cn, withRef } from "@udecode/cn";
 import type { TEditor } from "@udecode/plate-common";
 import {
@@ -21,7 +23,6 @@ import {
   useDropLine,
 } from "@udecode/plate-dnd";
 import { BlockSelectionPlugin } from "@udecode/plate-selection/react";
-import { Icons } from "src/components/icons";
 
 import {
   Tooltip,

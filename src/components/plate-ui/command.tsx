@@ -1,9 +1,10 @@
 "use client";
 
+import { Icons } from "@/components/icons";
+
 import type { DialogProps } from "@radix-ui/react-dialog";
 import { cn, createPrimitiveElement, withCn, withRef } from "@udecode/cn";
 import { Command as CommandPrimitive } from "cmdk";
-import { Icons } from "src/components/icons";
 
 import { Dialog, DialogContent } from "./dialog";
 

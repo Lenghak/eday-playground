@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Icons } from "@/components/icons";
+
 import { cn, withRef } from "@udecode/cn";
 import { useElement, useRemoveNodeButton } from "@udecode/plate-common/react";
 import type { TColumnElement } from "@udecode/plate-layout";
@@ -9,7 +11,6 @@ import {
   useDebouncePopoverOpen,
 } from "@udecode/plate-layout/react";
 import { useReadOnly } from "slate-react";
-import { Icons } from "src/components/icons";
 
 import { Button } from "./button";
 import { PlateElement } from "./plate-element";

@@ -2,9 +2,10 @@
 
 import React from "react";
 
+import { Icons } from "@/components/icons";
+
 import type { DropdownMenuItemProps } from "@radix-ui/react-dropdown-menu";
 import { cn } from "@udecode/cn";
-import { Icons } from "src/components/icons";
 
 import { buttonVariants } from "./button";
 import type { TColor } from "./color-dropdown-menu";

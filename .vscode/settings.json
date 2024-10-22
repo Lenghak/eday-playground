@@ -1,11 +1,6 @@
 {
   "editor.defaultFormatter": "trunk.io",
   "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": "always",
-    "source.fixAll.eslint": "always",
-    "source.removeUnusedImports": "always"
-  },
   "[ignore]": {
     "editor.defaultFormatter": "trunk.io"
   },
@@ -13,9 +8,6 @@
     "editor.defaultFormatter": "trunk.io"
   },
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "eslint.validate": [
@@ -47,15 +39,21 @@
     },
     {
       "name": "plate-ui",
-      "base": "ui",
-      "color": "gray",
+      "base": "base",
+      "color": "blue-700",
       "folderNames": ["plate-ui"]
+    },
+    {
+      "name": "magic-ui",
+      "base": "helper",
+      "color": "yellow-900",
+      "folderNames": ["magic-ui"]
     },
     {
       "name": "server-actions",
       "base": "functions",
       "color": "green-600",
       "folderNames": ["action", "actions"]
-    }
+    },
   ]
 }

@@ -1,4 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { Icons } from "@/components/icons";
+
 import type { DropdownMenuProps } from "@radix-ui/react-dropdown-menu";
 import { BlockquotePlugin } from "@udecode/plate-block-quote/react";
 import { getNodeEntries, isBlock } from "@udecode/plate-common";
@@ -10,7 +12,6 @@ import {
 } from "@udecode/plate-common/react";
 import { HEADING_KEYS } from "@udecode/plate-heading";
 import { ListStyleType, toggleIndentList } from "@udecode/plate-indent-list";
-import { Icons } from "src/components/icons";
 
 import {
   DropdownMenu,

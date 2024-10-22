@@ -1,10 +1,11 @@
+import { Icons } from "@/components/icons";
+
 import { withRef } from "@udecode/cn";
 import { ListStyleType } from "@udecode/plate-indent-list";
 import {
   useIndentListToolbarButton,
   useIndentListToolbarButtonState,
 } from "@udecode/plate-indent-list/react";
-import { Icons } from "src/components/icons";
 
 import { ToolbarButton } from "./toolbar";
 

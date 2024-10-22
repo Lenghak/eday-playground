@@ -1,9 +1,10 @@
+import { Icons } from "@/components/icons";
+
 import type { DropdownMenuProps } from "@radix-ui/react-dropdown-menu";
 import {
   useLineHeightDropdownMenu,
   useLineHeightDropdownMenuState,
 } from "@udecode/plate-line-height/react";
-import { Icons } from "src/components/icons";
 
 import {
   DropdownMenu,

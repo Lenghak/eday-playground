@@ -1,10 +1,11 @@
+import { Icons } from "@/components/icons";
+
 import { withRef } from "@udecode/cn";
 import {
   type ImagePlugin,
   type MediaEmbedPlugin,
   useMediaToolbarButton,
 } from "@udecode/plate-media/react";
-import { Icons } from "src/components/icons";
 
 import { ToolbarButton } from "./toolbar";
 

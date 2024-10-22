@@ -1,8 +1,9 @@
 import * as React from "react";
 
+import { cn } from "@/lib/utils";
+
 import * as HoverCardPrimitive from "@radix-ui/react-hover-card";
 import { number, oneOf, string } from "prop-types";
-import { cn } from "src/lib/utils";
 
 const HoverCard = HoverCardPrimitive.Root;
 

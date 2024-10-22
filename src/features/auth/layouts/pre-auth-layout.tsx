@@ -1,7 +1,8 @@
 import type { ComponentPropsWithoutRef } from "react";
 
-import { Flex, type FlexProps } from "src/components/ui/flex";
-import { cn } from "src/lib/utils";
+import { Flex, type FlexProps } from "@/components/ui/flex";
+
+import { cn } from "@/lib/utils";
 
 type PreAuthLayoutProps = Partial<FlexProps> &
   ComponentPropsWithoutRef<"section">;

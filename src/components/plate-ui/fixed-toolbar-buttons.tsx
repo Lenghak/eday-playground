@@ -1,3 +1,5 @@
+import { Icons } from "@/components/icons";
+
 import {
   BoldPlugin,
   CodePlugin,
@@ -6,7 +8,6 @@ import {
   UnderlinePlugin,
 } from "@udecode/plate-basic-marks/react";
 import { useEditorReadOnly } from "@udecode/plate-common/react";
-import { Icons } from "src/components/icons";
 
 import { InsertDropdownMenu } from "./insert-dropdown-menu";
 import { MarkToolbarButton } from "./mark-toolbar-button";

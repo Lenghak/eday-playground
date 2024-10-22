@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 
+import { Icons } from "@/components/icons";
+
 import {
   isSelectionExpanded,
   type WithRequiredKey,
@@ -15,7 +17,6 @@ import {
   useFloatingMediaSelectors,
 } from "@udecode/plate-media/react";
 import { useReadOnly, useSelected } from "slate-react";
-import { Icons } from "src/components/icons";
 
 import { Button, buttonVariants } from "./button";
 import { CaptionButton } from "./caption";

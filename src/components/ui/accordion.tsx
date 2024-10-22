@@ -1,9 +1,10 @@
 import * as React from "react";
 
+import { cn } from "@/lib/utils";
+
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import { ChevronDown } from "lucide-react";
 import PropTypes from "prop-types";
-import { cn } from "src/lib/utils";
 
 const Accordion = AccordionPrimitive.Root;
 

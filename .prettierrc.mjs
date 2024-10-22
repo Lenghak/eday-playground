@@ -8,13 +8,15 @@ export default {
   semi: true,
   singleQuote: false,
   tabWidth: 2,
+  tailwindAttributes: ["class", "className$"],
+  tailwindFunctions: ["cn", "clsx", "cva", "twMerge"],
   parser: "typescript",
   plugins: [
     "@trivago/prettier-plugin-sort-imports",
     "prettier-plugin-tailwindcss",
-    "prettier-plugin-astro",
   ],
   importOrder: [
+    "^next(.*)$",
     "^react(.*)$",
     "^@/modules/(.*)$",
     "^@/components/(.*)$",
@@ -29,12 +31,6 @@ export default {
   importOrderSortSpecifiers: true,
   importOrderCaseInsensitive: true,
   overrides: [
-    {
-      files: ["*.astro", "*.astro"],
-      options: {
-        parser: "astro",
-      },
-    },
     {
       files: ["*.scss", "*.css"],
       options: { parser: "scss" },

@@ -2,7 +2,7 @@ import { useBlockSelected } from "@udecode/plate-selection/react";
 import { cva, type VariantProps } from "class-variance-authority";
 
 const blockSelectionVariants = cva(
-  "pointer-events-none absolute inset-0 z-[1] bg-brand/[.13] transition-opacity",
+  "bg-brand/[.13] pointer-events-none absolute inset-0 z-[1] transition-opacity",
   {
     defaultVariants: {
       active: false,

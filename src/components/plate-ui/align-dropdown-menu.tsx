@@ -1,11 +1,12 @@
 "use client";
 
+import { Icons, iconVariants } from "@/components/icons";
+
 import type { DropdownMenuProps } from "@radix-ui/react-dropdown-menu";
 import {
   useAlignDropdownMenu,
   useAlignDropdownMenuState,
 } from "@udecode/plate-alignment/react";
-import { Icons, iconVariants } from "src/components/icons";
 
 import {
   DropdownMenu,

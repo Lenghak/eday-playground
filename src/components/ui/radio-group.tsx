@@ -1,11 +1,12 @@
 import * as React from "react";
 import { memo } from "react";
 
+import { cn } from "@/lib/utils";
+
 import * as RadioGroupPrimitive from "@radix-ui/react-radio-group";
 import { cva, type VariantProps } from "class-variance-authority";
 import { Circle } from "lucide-react";
 import PropTypes from "prop-types";
-import { cn } from "src/lib/utils";
 
 const radioVariants = cva(
   "aspect-square h-4 w-4 rounded-full border border-primary text-primary ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",

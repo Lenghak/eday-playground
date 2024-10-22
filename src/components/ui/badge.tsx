@@ -1,8 +1,9 @@
 import * as React from "react";
 
+import { cn } from "@/lib/utils";
+
 import { cva, type VariantProps } from "class-variance-authority";
 import { Circle } from "lucide-react";
-import { cn } from "src/lib/utils";
 
 const badgeVariants = cva(
   "inline-flex items-center rounded-full px-3 py-1.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2",
@@ -65,151 +66,151 @@ const badgeVariants = cva(
         variant: "outline",
         color: "default",
         className:
-          "text-primary border-primary dark:text-primary dark:border-primary",
+          "border-primary text-primary dark:border-primary dark:text-primary",
       },
       {
         variant: "outline",
         color: "secondary",
         className:
-          "text-secondary border-secondary dark:text-secondary dark:border-secondary",
+          "border-secondary text-secondary dark:border-secondary dark:text-secondary",
       },
       {
         variant: "outline",
         color: "destructive",
         className:
-          "text-destructive border-destructive dark:text-destructive dark:border-destructive",
+          "border-destructive text-destructive dark:border-destructive dark:text-destructive",
       },
       {
         variant: "outline",
         color: "slate",
         className:
-          "text-slate-500 border-slate-500 hover:bg-slate-100 dark:text-slate-400 dark:border-slate-400 dark:hover:bg-slate-900",
+          "border-slate-500 text-slate-500 hover:bg-slate-100 dark:border-slate-400 dark:text-slate-400 dark:hover:bg-slate-900",
       },
       {
         variant: "outline",
         color: "gray",
         className:
-          "text-gray-500 border-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:border-gray-400 dark:hover:bg-gray-900",
+          "border-gray-500 text-gray-500 hover:bg-gray-100 dark:border-gray-400 dark:text-gray-400 dark:hover:bg-gray-900",
       },
       {
         variant: "outline",
         color: "zinc",
         className:
-          "text-zinc-500 border-zinc-500 hover:bg-zinc-100 dark:text-zinc-400 dark:border-zinc-400 dark:hover:bg-zinc-900",
+          "border-zinc-500 text-zinc-500 hover:bg-zinc-100 dark:border-zinc-400 dark:text-zinc-400 dark:hover:bg-zinc-900",
       },
       {
         variant: "outline",
         color: "neutral",
         className:
-          "text-neutral-500 border-neutral-500 hover:bg-neutral-100 dark:text-neutral-400 dark:border-neutral-400 dark:hover:bg-neutral-900",
+          "border-neutral-500 text-neutral-500 hover:bg-neutral-100 dark:border-neutral-400 dark:text-neutral-400 dark:hover:bg-neutral-900",
       },
       {
         variant: "outline",
         color: "stone",
         className:
-          "text-stone-500 border-stone-500 hover:bg-stone-100 dark:text-stone-400 dark:border-stone-400 dark:hover:bg-stone-900",
+          "border-stone-500 text-stone-500 hover:bg-stone-100 dark:border-stone-400 dark:text-stone-400 dark:hover:bg-stone-900",
       },
       {
         variant: "outline",
         color: "red",
         className:
-          "text-red-500 border-red-500 hover:bg-red-100 dark:text-red-400 dark:border-red-400 dark:hover:bg-red-900",
+          "border-red-500 text-red-500 hover:bg-red-100 dark:border-red-400 dark:text-red-400 dark:hover:bg-red-900",
       },
       {
         variant: "outline",
         color: "orange",
         className:
-          "text-orange-500 border-orange-500 hover:bg-orange-100 dark:text-orange-400 dark:border-orange-400 dark:hover:bg-orange-900",
+          "border-orange-500 text-orange-500 hover:bg-orange-100 dark:border-orange-400 dark:text-orange-400 dark:hover:bg-orange-900",
       },
       {
         variant: "outline",
         color: "amber",
         className:
-          "text-amber-500 border-amber-500 hover:bg-amber-100 dark:text-amber-400 dark:border-amber-400 dark:hover:bg-amber-900",
+          "border-amber-500 text-amber-500 hover:bg-amber-100 dark:border-amber-400 dark:text-amber-400 dark:hover:bg-amber-900",
       },
       {
         variant: "outline",
         color: "yellow",
         className:
-          "text-yellow-500 border-yellow-500 hover:bg-yellow-100 dark:text-yellow-400 dark:border-yellow-400 dark:hover:bg-yellow-900",
+          "border-yellow-500 text-yellow-500 hover:bg-yellow-100 dark:border-yellow-400 dark:text-yellow-400 dark:hover:bg-yellow-900",
       },
       {
         variant: "outline",
         color: "lime",
         className:
-          "text-lime-500 border-lime-500 hover:bg-lime-100 dark:text-lime-400 dark:border-lime-400 dark:hover:bg-lime-900",
+          "border-lime-500 text-lime-500 hover:bg-lime-100 dark:border-lime-400 dark:text-lime-400 dark:hover:bg-lime-900",
       },
       {
         variant: "outline",
         color: "green",
         className:
-          "text-green-500 border-green-500 hover:bg-green-100 dark:text-green-400 dark:border-green-400 dark:hover:bg-green-900",
+          "border-green-500 text-green-500 hover:bg-green-100 dark:border-green-400 dark:text-green-400 dark:hover:bg-green-900",
       },
       {
         variant: "outline",
         color: "emerald",
         className:
-          "text-emerald-500 border-emerald-500 hover:bg-emerald-100 dark:text-emerald-400 dark:border-emerald-400 dark:hover:bg-emerald-900",
+          "border-emerald-500 text-emerald-500 hover:bg-emerald-100 dark:border-emerald-400 dark:text-emerald-400 dark:hover:bg-emerald-900",
       },
       {
         variant: "outline",
         color: "teal",
         className:
-          "text-teal-500 border-teal-500 hover:bg-teal-100 dark:text-teal-400 dark:border-teal-400 dark:hover:bg-teal-900",
+          "border-teal-500 text-teal-500 hover:bg-teal-100 dark:border-teal-400 dark:text-teal-400 dark:hover:bg-teal-900",
       },
       {
         variant: "outline",
         color: "cyan",
         className:
-          "text-cyan-500 border-cyan-500 hover:bg-cyan-100 dark:text-cyan-400 dark:border-cyan-400 dark:hover:bg-cyan-900",
+          "border-cyan-500 text-cyan-500 hover:bg-cyan-100 dark:border-cyan-400 dark:text-cyan-400 dark:hover:bg-cyan-900",
       },
       {
         variant: "outline",
         color: "sky",
         className:
-          "text-sky-500 border-sky-500 hover:bg-sky-100 dark:text-sky-400 dark:border-sky-400 dark:hover:bg-sky-900",
+          "border-sky-500 text-sky-500 hover:bg-sky-100 dark:border-sky-400 dark:text-sky-400 dark:hover:bg-sky-900",
       },
       {
         variant: "outline",
         color: "blue",
         className:
-          "text-blue-500 border-blue-500 hover:bg-blue-100 dark:text-blue-400 dark:border-blue-400 dark:hover:bg-blue-900",
+          "border-blue-500 text-blue-500 hover:bg-blue-100 dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-900",
       },
       {
         variant: "outline",
         color: "indigo",
         className:
-          "text-indigo-500 border-indigo-500 hover:bg-indigo-100 dark:text-indigo-400 dark:border-indigo-400 dark:hover:bg-indigo-900",
+          "border-indigo-500 text-indigo-500 hover:bg-indigo-100 dark:border-indigo-400 dark:text-indigo-400 dark:hover:bg-indigo-900",
       },
       {
         variant: "outline",
         color: "violet",
         className:
-          "text-violet-500 border-violet-500 hover:bg-violet-100 dark:text-violet-400 dark:border-violet-400 dark:hover:bg-violet-900",
+          "border-violet-500 text-violet-500 hover:bg-violet-100 dark:border-violet-400 dark:text-violet-400 dark:hover:bg-violet-900",
       },
       {
         variant: "outline",
         color: "purple",
         className:
-          "text-purple-500 border-purple-500 hover:bg-purple-100 dark:text-purple-400 dark:border-purple-400 dark:hover:bg-purple-900",
+          "border-purple-500 text-purple-500 hover:bg-purple-100 dark:border-purple-400 dark:text-purple-400 dark:hover:bg-purple-900",
       },
       {
         variant: "outline",
         color: "fuchsia",
         className:
-          "text-fuchsia-500 border-fuchsia-500 hover:bg-fuchsia-100 dark:text-fuchsia-400 dark:border-fuchsia-400 dark:hover:bg-fuchsia-900",
+          "border-fuchsia-500 text-fuchsia-500 hover:bg-fuchsia-100 dark:border-fuchsia-400 dark:text-fuchsia-400 dark:hover:bg-fuchsia-900",
       },
       {
         variant: "outline",
         color: "pink",
         className:
-          "text-pink-500 border-pink-500 hover:bg-pink-100 dark:text-pink-400 dark:border-pink-400 dark:hover:bg-pink-900",
+          "border-pink-500 text-pink-500 hover:bg-pink-100 dark:border-pink-400 dark:text-pink-400 dark:hover:bg-pink-900",
       },
       {
         variant: "outline",
         color: "rose",
         className:
-          "text-rose-500 border-rose-500 hover:bg-rose-100 dark:text-rose-400 dark:border-rose-400 dark:hover:bg-rose-900",
+          "border-rose-500 text-rose-500 hover:bg-rose-100 dark:border-rose-400 dark:text-rose-400 dark:hover:bg-rose-900",
       },
       {
         variant: "soft",
@@ -239,7 +240,7 @@ const badgeVariants = cva(
         variant: "soft",
         color: "gray",
         className:
-          "bg-gray-200 text-gray-900 hover:bg-gray-500 hover:text-gray-50 dark:bg-gray-800 dark:text-gray-100 dark:hover:bg-gray-700  dark:hover:text-gray-50",
+          "bg-gray-200 text-gray-900 hover:bg-gray-500 hover:text-gray-50 dark:bg-gray-800 dark:text-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-50",
       },
       {
         variant: "soft",

@@ -1,3 +1,5 @@
+import { Icons, iconVariants } from "@/components/icons";
+
 import type * as DropdownMenuPrimitive from "@radix-ui/react-dropdown-menu";
 import { PopoverAnchor } from "@radix-ui/react-popover";
 import { cn, withRef } from "@udecode/cn";
@@ -20,7 +22,6 @@ import {
   useTableMergeState,
 } from "@udecode/plate-table/react";
 import { useReadOnly, useSelected } from "slate-react";
-import { Icons, iconVariants } from "src/components/icons";
 
 import { Button } from "./button";
 import {

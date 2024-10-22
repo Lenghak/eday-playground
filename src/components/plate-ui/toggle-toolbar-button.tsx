@@ -1,9 +1,10 @@
+import { Icons } from "@/components/icons";
+
 import { withRef } from "@udecode/cn";
 import {
   useToggleToolbarButton,
   useToggleToolbarButtonState,
 } from "@udecode/plate-toggle/react";
-import { Icons } from "src/components/icons";
 
 import { ToolbarButton } from "./toolbar";
 

@@ -1,13 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 
+import { useMounted } from "@/hooks/use-mounted";
+
 import { cn, withRef } from "@udecode/cn";
 import { getHandler } from "@udecode/plate-common";
 import { useElement } from "@udecode/plate-common/react";
 import type { TMentionElement } from "@udecode/plate-mention";
 import { IS_APPLE } from "@udecode/utils";
 import { useFocused, useSelected } from "slate-react";
-import { useMounted } from "src/hooks/use-mounted";
 
 import { PlateElement } from "./plate-element";
 

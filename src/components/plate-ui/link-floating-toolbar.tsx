@@ -1,5 +1,7 @@
 "use client";
 
+import { Icons } from "@/components/icons";
+
 import { cn } from "@udecode/cn";
 import { useFormInputProps } from "@udecode/plate-common/react";
 import {
@@ -16,7 +18,6 @@ import {
   useFloatingLinkInsert,
   useFloatingLinkInsertState,
 } from "@udecode/plate-link/react";
-import { Icons } from "src/components/icons";
 
 import { buttonVariants } from "./button";
 import { inputVariants } from "./input";

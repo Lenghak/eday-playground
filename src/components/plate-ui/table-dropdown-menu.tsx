@@ -1,3 +1,5 @@
+import { Icons, iconVariants } from "@/components/icons";
+
 import type { DropdownMenuProps } from "@radix-ui/react-dropdown-menu";
 import { someNode } from "@udecode/plate-common";
 import {
@@ -12,7 +14,6 @@ import {
   insertTable,
   TablePlugin,
 } from "@udecode/plate-table/react";
-import { Icons, iconVariants } from "src/components/icons";
 
 import {
   DropdownMenu,

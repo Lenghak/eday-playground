@@ -1,10 +1,11 @@
+import { Icons } from "@/components/icons";
+
 import { cn, withRef } from "@udecode/cn";
 import { useElement } from "@udecode/plate-common/react";
 import {
   useToggleButton,
   useToggleButtonState,
 } from "@udecode/plate-toggle/react";
-import { Icons } from "src/components/icons";
 
 import { PlateElement } from "./plate-element";
 

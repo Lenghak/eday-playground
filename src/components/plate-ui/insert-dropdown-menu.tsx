@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Icons } from "@/components/icons";
+
 import type { DropdownMenuProps } from "@radix-ui/react-dropdown-menu";
 import { BlockquotePlugin } from "@udecode/plate-block-quote/react";
 import { insertEmptyElement } from "@udecode/plate-common";
@@ -9,7 +11,6 @@ import {
   useEditorRef,
 } from "@udecode/plate-common/react";
 import { HEADING_KEYS } from "@udecode/plate-heading";
-import { Icons } from "src/components/icons";
 
 import {
   DropdownMenu,

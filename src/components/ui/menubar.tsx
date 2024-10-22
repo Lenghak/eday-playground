@@ -1,9 +1,10 @@
 import * as React from "react";
 
+import { cn } from "@/lib/utils";
+
 import * as MenubarPrimitive from "@radix-ui/react-menubar";
 import { Check, ChevronRight, Circle } from "lucide-react";
 import { bool, number, oneOf, string } from "prop-types";
-import { cn } from "src/lib/utils";
 
 const MenubarMenu = MenubarPrimitive.Menu;
 

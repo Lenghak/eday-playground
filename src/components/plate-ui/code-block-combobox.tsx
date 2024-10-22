@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 
+import { Icons } from "@/components/icons";
+
 import { cn } from "@udecode/cn";
 import {
   useCodeBlockCombobox,
@@ -57,7 +59,6 @@ import "prismjs/components/prism-tsx.js";
 import "prismjs/components/prism-typescript.js";
 import "prismjs/components/prism-wasm.js";
 import "prismjs/components/prism-yaml.js";
-import { Icons } from "src/components/icons";
 
 import { Button } from "./button";
 import {

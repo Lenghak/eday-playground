@@ -1,8 +1,9 @@
 import * as React from "react";
 
+import { cn } from "@/lib/utils";
+
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
-import { cn } from "src/lib/utils";
 
 const buttonVariants = cva(
   "inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
@@ -23,45 +24,45 @@ const buttonVariants = cva(
       },
       color: {
         default:
-          "bg-primary text-primary-foreground focus-visible:ring-primary border-input",
+          "border-input bg-primary text-primary-foreground focus-visible:ring-primary",
         secondary:
-          "bg-secondary text-secondary-foreground focus-visible:ring-secondary border-secondary-200 dark:border-secondary-900",
+          "border-secondary-200 dark:border-secondary-900 bg-secondary text-secondary-foreground focus-visible:ring-secondary",
         destructive:
-          "bg-destructive text-destructive-foreground border-destructive-200 dark:border-destructive-900 focus-visible:ring-destructive",
+          "border-destructive-200 dark:border-destructive-900 bg-destructive text-destructive-foreground focus-visible:ring-destructive",
         slate:
-          "bg-slate-500 text-slate-50 focus-visible:ring-slate-500 border-slate-200 dark:border-slate-900",
-        gray: "bg-gray-500 text-gray-50 border-gray-200 dark:border-gray-900 focus-visible:ring-gray-500",
-        zinc: "bg-zinc-500 text-zinc-50 border-zinc-200 dark:border-zinc-900 focus-visible:ring-zinc-500",
+          "border-slate-200 bg-slate-500 text-slate-50 focus-visible:ring-slate-500 dark:border-slate-900",
+        gray: "border-gray-200 bg-gray-500 text-gray-50 focus-visible:ring-gray-500 dark:border-gray-900",
+        zinc: "border-zinc-200 bg-zinc-500 text-zinc-50 focus-visible:ring-zinc-500 dark:border-zinc-900",
         neutral:
-          "bg-neutral-500 text-neutral-50 focus-visible:ring-neutral-500 border-neutral-200 dark:border-neutral-900",
+          "border-neutral-200 bg-neutral-500 text-neutral-50 focus-visible:ring-neutral-500 dark:border-neutral-900",
         stone:
-          "bg-stone-500 text-stone-50 focus-visible:ring-stone-500 border-stone-200 dark:border-stone-900",
-        red: "bg-red-500 text-red-50 focus-visible:ring-red-500 border-red-200 dark:border-red-900",
+          "border-stone-200 bg-stone-500 text-stone-50 focus-visible:ring-stone-500 dark:border-stone-900",
+        red: "border-red-200 bg-red-500 text-red-50 focus-visible:ring-red-500 dark:border-red-900",
         orange:
-          "bg-orange-500 text-orange-50 focus-visible:ring-orange-500 border-orange-200 dark:border-orange-900",
+          "border-orange-200 bg-orange-500 text-orange-50 focus-visible:ring-orange-500 dark:border-orange-900",
         amber:
-          "bg-amber-500 text-amber-50 focus-visible:ring-amber-500 border-amber-200 dark:border-amber-900",
+          "border-amber-200 bg-amber-500 text-amber-50 focus-visible:ring-amber-500 dark:border-amber-900",
         yellow:
-          "bg-yellow-500 text-yellow-50 focus-visible:ring-yellow-500 border-yellow-200 dark:border-yellow-900",
-        lime: "bg-lime-500 text-lime-50 focus-visible:ring-lime-500 border-lime-200 dark:border-lime-900",
+          "border-yellow-200 bg-yellow-500 text-yellow-50 focus-visible:ring-yellow-500 dark:border-yellow-900",
+        lime: "border-lime-200 bg-lime-500 text-lime-50 focus-visible:ring-lime-500 dark:border-lime-900",
         green:
-          "bg-green-500 text-green-50 focus-visible:ring-green-500 border-green-200 dark:border-green-900",
+          "border-green-200 bg-green-500 text-green-50 focus-visible:ring-green-500 dark:border-green-900",
         emerald:
-          "bg-emerald-500 text-emerald-50 focus-visible:ring-emerald-500 border-emerald-200 dark:border-emerald-900",
-        teal: "bg-teal-500 text-teal-50 focus-visible:ring-teal-500 border-teal-200 dark:border-teal-900",
-        cyan: "bg-cyan-500 text-cyan-50 focus-visible:ring-cyan-500 border-cyan-200 dark:border-cyan-900",
-        sky: "bg-sky-500 text-sky-50 focus-visible:ring-sky-500 border-sky-200 dark:border-sky-900",
-        blue: "bg-blue-500 text-blue-50 focus-visible:ring-blue-500 border-blue-200 dark:border-blue-900",
+          "border-emerald-200 bg-emerald-500 text-emerald-50 focus-visible:ring-emerald-500 dark:border-emerald-900",
+        teal: "border-teal-200 bg-teal-500 text-teal-50 focus-visible:ring-teal-500 dark:border-teal-900",
+        cyan: "border-cyan-200 bg-cyan-500 text-cyan-50 focus-visible:ring-cyan-500 dark:border-cyan-900",
+        sky: "border-sky-200 bg-sky-500 text-sky-50 focus-visible:ring-sky-500 dark:border-sky-900",
+        blue: "border-blue-200 bg-blue-500 text-blue-50 focus-visible:ring-blue-500 dark:border-blue-900",
         indigo:
-          "bg-indigo-500 text-indigo-50 focus-visible:ring-indigo-500 border-indigo-200 dark:border-indigo-900",
+          "border-indigo-200 bg-indigo-500 text-indigo-50 focus-visible:ring-indigo-500 dark:border-indigo-900",
         violet:
-          "bg-violet-500 text-violet-50 focus-visible:ring-violet-500 border-violet-200 dark:border-violet-900",
+          "border-violet-200 bg-violet-500 text-violet-50 focus-visible:ring-violet-500 dark:border-violet-900",
         purple:
-          "bg-purple-500 text-purple-50 focus-visible:ring-purple-500 border-purple-200 dark:border-purple-900",
+          "border-purple-200 bg-purple-500 text-purple-50 focus-visible:ring-purple-500 dark:border-purple-900",
         fuchsia:
-          "bg-fuchsia-500 text-fuchsia-50 focus-visible:ring-fuchsia-500 border-fuchsia-200 dark:border-fuchsia-900",
-        pink: "bg-pink-500 text-pink-50 focus-visible:ring-pink-500 border-pink-200 dark:border-pink-900",
-        rose: "bg-rose-500 text-rose-50 focus-visible:ring-rose-500 border-rose-200 dark:border-rose-900",
+          "border-fuchsia-200 bg-fuchsia-500 text-fuchsia-50 focus-visible:ring-fuchsia-500 dark:border-fuchsia-900",
+        pink: "border-pink-200 bg-pink-500 text-pink-50 focus-visible:ring-pink-500 dark:border-pink-900",
+        rose: "border-rose-200 bg-rose-500 text-rose-50 focus-visible:ring-rose-500 dark:border-rose-900",
       },
     },
     compoundVariants: [
@@ -122,7 +123,7 @@ const buttonVariants = cva(
         variant: "link",
         color: "slate",
         className:
-          "bg-background text-slate-500 dark:text-slate-400 hover:text-slate-600 dark:hover:text-slate-300",
+          "bg-background text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300",
       },
       {
         variant: "filled",
@@ -151,7 +152,7 @@ const buttonVariants = cva(
         variant: "link",
         color: "gray",
         className:
-          "bg-background text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300",
+          "bg-background text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300",
       },
       {
         variant: "filled",
@@ -180,7 +181,7 @@ const buttonVariants = cva(
         variant: "link",
         color: "zinc",
         className:
-          "bg-background text-zinc-500 dark:text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300",
+          "bg-background text-zinc-500 hover:text-zinc-600 dark:text-zinc-400 dark:hover:text-zinc-300",
       },
       {
         variant: "filled",
@@ -209,7 +210,7 @@ const buttonVariants = cva(
         variant: "link",
         color: "neutral",
         className:
-          "bg-background text-neutral-500 dark:text-neutral-400 hover:text-neutral-600 dark:hover:text-neutral-300",
+          "bg-background text-neutral-500 hover:text-neutral-600 dark:text-neutral-400 dark:hover:text-neutral-300",
       },
       {
         variant: "filled",
@@ -238,7 +239,7 @@ const buttonVariants = cva(
         variant: "link",
         color: "stone",
         className:
-          "bg-background text-stone-500 dark:text-stone-400 hover:text-stone-600 dark:hover:text-stone-300",
+          "bg-background text-stone-500 hover:text-stone-600 dark:text-stone-400 dark:hover:text-stone-300",
       },
       {
         variant: "filled",
@@ -267,7 +268,7 @@ const buttonVariants = cva(
         variant: "link",
         color: "red",
         className:
-          "bg-background text-red-500 dark:text-red-400 hover:text-red-600 dark:hover:text-red-300",
+          "bg-background text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300",
       },
       {
         variant: "filled",
@@ -296,7 +297,7 @@ const buttonVariants = cva(
         variant: "link",
         color: "orange",
         className:
-          "bg-background text-orange-500 dark:text-orange-400 hover:text-orange-600 dark:hover:text-orange-300",
+          "bg-background text-orange-500 hover:text-orange-600 dark:text-orange-400 dark:hover:text-orange-300",
       },
       {
         variant: "filled",
@@ -325,7 +326,7 @@ const buttonVariants = cva(
         variant: "link",
         color: "amber",
         className:
-          "bg-background text-amber-500 dark:text-amber-400 hover:text-amber-600 dark:hover:text-amber-300",
+          "bg-background text-amber-500 hover:text-amber-600 dark:text-amber-400 dark:hover:text-amber-300",
       },
       {
         variant: "filled",
@@ -342,7 +343,7 @@ const buttonVariants = cva(
         variant: "outline",
         color: "yellow",
         className:
-          "bg-background text-yellow-500 hover:bg-yellow-100  hover:text-yellow-900 dark:text-yellow-400 dark:hover:bg-yellow-900 dark:hover:text-yellow-50",
+          "bg-background text-yellow-500 hover:bg-yellow-100 hover:text-yellow-900 dark:text-yellow-400 dark:hover:bg-yellow-900 dark:hover:text-yellow-50",
       },
       {
         variant: "ghost",
@@ -354,7 +355,7 @@ const buttonVariants = cva(
         variant: "link",
         color: "yellow",
         className:
-          "bg-background text-yellow-500 dark:text-yellow-400 hover:text-yellow-600 dark:hover:text-yellow-300",
+          "bg-background text-yellow-500 hover:text-yellow-600 dark:text-yellow-400 dark:hover:text-yellow-300",
       },
       {
         variant: "filled",
@@ -383,7 +384,7 @@ const buttonVariants = cva(
         variant: "link",
         color: "lime",
         className:
-          "bg-background text-lime-500 dark:text-lime-400 hover:text-lime-600 dark:hover:text-lime-300",
+          "bg-background text-lime-500 hover:text-lime-600 dark:text-lime-400 dark:hover:text-lime-300",
       },
       {
         variant: "filled",
@@ -412,7 +413,7 @@ const buttonVariants = cva(
         variant: "link",
         color: "green",
         className:
-          "bg-background text-green-500 dark:text-green-400 hover:text-green-600 dark:hover:text-green-300",
+          "bg-background text-green-500 hover:text-green-600 dark:text-green-400 dark:hover:text-green-300",
       },
       {
         variant: "filled",
@@ -441,7 +442,7 @@ const buttonVariants = cva(
         variant: "link",
         color: "emerald",
         className:
-          "bg-background text-emerald-500 dark:text-emerald-400 hover:text-emerald-600 dark:hover:text-emerald-300",
+          "bg-background text-emerald-500 hover:text-emerald-600 dark:text-emerald-400 dark:hover:text-emerald-300",
       },
       {
         variant: "filled",
@@ -470,7 +471,7 @@ const buttonVariants = cva(
         variant: "link",
         color: "teal",
         className:
-          "bg-background text-teal-500 dark:text-teal-400 hover:text-teal-600 dark:hover:text-teal-300",
+          "bg-background text-teal-500 hover:text-teal-600 dark:text-teal-400 dark:hover:text-teal-300",
       },
       {
         variant: "filled",
@@ -499,7 +500,7 @@ const buttonVariants = cva(
         variant: "link",
         color: "cyan",
         className:
-          "bg-background text-cyan-500 dark:text-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-300",
+          "bg-background text-cyan-500 hover:text-cyan-600 dark:text-cyan-400 dark:hover:text-cyan-300",
       },
       {
         variant: "filled",
@@ -528,7 +529,7 @@ const buttonVariants = cva(
         variant: "link",
         color: "sky",
         className:
-          "bg-background text-sky-500 dark:text-sky-400 hover:text-sky-600 dark:hover:text-sky-300",
+          "bg-background text-sky-500 hover:text-sky-600 dark:text-sky-400 dark:hover:text-sky-300",
       },
       {
         variant: "filled",
@@ -557,7 +558,7 @@ const buttonVariants = cva(
         variant: "link",
         color: "blue",
         className:
-          "bg-background text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300",
+          "bg-background text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300",
       },
       {
         variant: "filled",
@@ -586,7 +587,7 @@ const buttonVariants = cva(
         variant: "link",
         color: "indigo",
         className:
-          "bg-background text-indigo-500 dark:text-indigo-400 hover:text-indigo-600 dark:hover:text-indigo-300",
+          "bg-background text-indigo-500 hover:text-indigo-600 dark:text-indigo-400 dark:hover:text-indigo-300",
       },
       {
         variant: "filled",
@@ -615,7 +616,7 @@ const buttonVariants = cva(
         variant: "link",
         color: "violet",
         className:
-          "bg-background text-violet-500 dark:text-violet-400 hover:text-violet-600 dark:hover:text-violet-300",
+          "bg-background text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300",
       },
       {
         variant: "filled",
@@ -644,7 +645,7 @@ const buttonVariants = cva(
         variant: "link",
         color: "purple",
         className:
-          "bg-background text-purple-500 dark:text-purple-400 hover:text-purple-600 dark:hover:text-purple-300",
+          "bg-background text-purple-500 hover:text-purple-600 dark:text-purple-400 dark:hover:text-purple-300",
       },
       {
         variant: "filled",
@@ -673,7 +674,7 @@ const buttonVariants = cva(
         variant: "link",
         color: "fuchsia",
         className:
-          "bg-background text-fuchsia-500 dark:text-fuchsia-400 hover:text-fuchsia-600 dark:hover:text-fuchsia-300",
+          "bg-background text-fuchsia-500 hover:text-fuchsia-600 dark:text-fuchsia-400 dark:hover:text-fuchsia-300",
       },
       {
         variant: "filled",
@@ -702,7 +703,7 @@ const buttonVariants = cva(
         variant: "link",
         color: "pink",
         className:
-          "bg-background text-pink-500 dark:text-pink-400 hover:text-pink-600 dark:hover:text-pink-300",
+          "bg-background text-pink-500 hover:text-pink-600 dark:text-pink-400 dark:hover:text-pink-300",
       },
       {
         variant: "filled",
@@ -731,7 +732,7 @@ const buttonVariants = cva(
         variant: "link",
         color: "rose",
         className:
-          "bg-background text-rose-500 dark:text-rose-400 hover:text-rose-600 dark:hover:text-rose-300",
+          "bg-background text-rose-500 hover:text-rose-600 dark:text-rose-400 dark:hover:text-rose-300",
       },
     ],
     defaultVariants: {
