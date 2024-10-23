@@ -1,6 +1,10 @@
 import type { PropsWithChildren } from "react";
 
-import { Logo, LogoImage } from "@/components/custom/logo";
+import {
+  Logo,
+  LogoDarkNoBackground,
+  LogoLightNoBackground,
+} from "@/components/custom/logo";
 import { BorderBeam } from "@/components/magic-ui/border-beam";
 import {
   Card,
@@ -19,18 +23,24 @@ export default function SignInLayout({ children }: PropsWithChildren) {
   return (
     <PreAuthLayout className="relative z-10">
       <Flex
-        direction="column"
+        direction="col"
         justify="center"
         items="center"
         className="h-full"
       >
-        <Card className="relative w-full max-w-screen-xs items-center gap-6">
+        <Card className="relative w-full max-w-screen-xs items-center">
           <CardHeader className="flex w-full flex-col items-center">
             <Logo className="mb-2 py-4">
-              <LogoImage
-                width={40}
-                height={40}
-                className="rounded-full"
+              <LogoDarkNoBackground
+                width={56}
+                height={56}
+                className="hidden rounded-full border p-1 dark:block"
+              />
+
+              <LogoLightNoBackground
+                width={56}
+                height={56}
+                className="rounded-full border p-1 dark:hidden"
               />
             </Logo>
             <CardTitle className="text-center font-bold">

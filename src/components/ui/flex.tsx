@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 export interface FlexProps extends React.HTMLAttributes<HTMLElement> {
   as?: React.ElementType;
   inline?: boolean;
-  direction?: "row" | "row-reverse" | "column" | "column-reverse";
+  direction?: "row" | "row-reverse" | "col" | "col-reverse";
   wrap?: "nowrap" | "wrap" | "wrap-reverse";
   justify?: "start" | "end" | "center" | "between" | "around" | "evenly";
   items?: "start" | "end" | "center" | "baseline" | "stretch";

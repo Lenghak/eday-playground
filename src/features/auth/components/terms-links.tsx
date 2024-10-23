@@ -13,7 +13,7 @@ export default function TermsPrivacyLinks({
 }: ComponentPropsWithoutRef<"p">) {
   return (
     <TypographyMuted
-      className={cn("mt-12 max-w-xs text-center", className)}
+      className={cn("max-w-xs text-center", className)}
       {...props}
     >
       By signing in, you are agreed to our

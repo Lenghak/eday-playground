@@ -30,23 +30,70 @@ Logo.displayName = "Logo";
 
 type LogoImageProps = Omit<
   ImageProps & ComponentPropsWithoutRef<"image">,
-  "src" | "alt"
+  "alt"
 >;
-export const LogoImage = memo(function ({
-  className,
-  ...props
-}: LogoImageProps) {
+const LogoImage = memo(function ({ className, ...props }: LogoImageProps) {
   return (
     <Image
-      src={"/svg/logo-light.svg"}
       alt="Logo"
       className={cn("aspect-square", className)}
       {...props}
     />
   );
 });
-
 LogoImage.displayName = "LogoImage";
+
+export const LogoLightWithBackground = memo(function ({
+  ...props
+}: Omit<LogoImageProps, "src">) {
+  return (
+    <LogoImage
+      src={"/svg/logo-light-background.svg"}
+      {...props}
+    />
+  );
+});
+
+LogoLightWithBackground.displayName = "LogoLightWithBackground";
+
+export const LogoLightNoBackground = memo(function ({
+  ...props
+}: Omit<LogoImageProps, "src">) {
+  return (
+    <LogoImage
+      src={"/svg/logo-light-no-background.svg"}
+      {...props}
+    />
+  );
+});
+
+LogoLightNoBackground.displayName = "LogoLightNoBackground";
+
+export const LogoDarkWithBackground = memo(function ({
+  ...props
+}: Omit<LogoImageProps, "src">) {
+  return (
+    <LogoImage
+      src={"/svg/logo-dark-background.svg"}
+      {...props}
+    />
+  );
+});
+
+LogoDarkWithBackground.displayName = "LogoDarkWithBackground";
+
+export const LogoDarkNoBackground = memo(function ({
+  ...props
+}: Omit<LogoImageProps, "src">) {
+  return (
+    <LogoImage
+      src={"/svg/logo-dark-no-background.svg"}
+      {...props}
+    />
+  );
+});
+
+LogoDarkNoBackground.displayName = "LogoDarkNoBackground";
 
 type LogoContentProps = ComponentPropsWithoutRef<"span">;
 

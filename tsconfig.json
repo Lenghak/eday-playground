@@ -20,7 +20,8 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "$/*": ["./src/features"]
+      "$/*": ["./src/features"],
+      "~/*": ["./*"]
     }
   },
   "include": [
@@ -28,7 +29,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/providers/themes-provider",
     "commitlint.config.mjs"
   ],
   "exclude": ["node_modules"]

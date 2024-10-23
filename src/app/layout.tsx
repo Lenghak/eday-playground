@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 
 import { sans } from "@/app/fonts";
 import { ThemeProvider } from "@/providers/themes-provider";
+import { SessionProvider } from "next-auth/react";
 
 import "./globals.css";
 
@@ -61,13 +62,13 @@ export default function RootLayout({
         <link
           rel="icon"
           type="image/svg+xml"
-          href="/svg/logo-light.svg"
+          href="/svg/logo-light-no-background.svg"
           media="(prefers-color-scheme: light)"
         />
         <link
           rel="icon"
           type="image/svg+xml"
-          href="/svg/logo-dark.svg"
+          href="/svg/logo-dark-no-background.svg"
           media="(prefers-color-scheme: dark)"
         />
       </head>
@@ -78,7 +79,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <SessionProvider>{children}</SessionProvider>
         </ThemeProvider>
       </body>
     </html>

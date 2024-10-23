@@ -1,8 +1,18 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 
-export const signInSchema = z.object({});
+export const oAuthProvidersSchema = z.enum([
+  "facebook",
+  "google",
+  "github",
+  "credential",
+]);
 
-export const signInResolver = zodResolver(signInSchema);
+export const oAuthSignInSchema = z.object({
+  provider: oAuthProvidersSchema,
+});
 
-export type SignInSchema = z.infer<typeof signInSchema>;
+export const oAuthSignInResolver = zodResolver(oAuthSignInSchema);
+
+export type OAuthProvidersSchema = z.infer<typeof oAuthProvidersSchema>;
+export type OAuthSignInSchema = z.infer<typeof oAuthSignInSchema>;

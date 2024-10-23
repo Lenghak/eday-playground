@@ -46,5 +46,21 @@
       "color": "green-600",
       "folderNames": ["action", "actions"]
     },
+  ],
+  "material-icon-theme.files.customClones" : [
+    {
+      "name": "auth-config",
+      "color": "yellow-700",
+      "base": "lock",
+      "fileExtensions": [".ts"],
+      "fileNames": ["auth.config.ts"]
+    },
+    {
+      "name": "depdencies-cruiser",
+      "color": "silver",
+      "base": "pipeline",
+      "fileExtensions": [".cjs", ".mjs", ".ts"],
+      "fileNames": [".dependency-cruiser.cjs"]
+    }
   ]
 }
