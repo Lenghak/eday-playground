@@ -1,4 +1,7 @@
+import { env } from "@/env";
 import MillionLint from "@million/lint";
+
+console.debug("Loading Env: \n", env);
 
 const nextConfig = {};
 

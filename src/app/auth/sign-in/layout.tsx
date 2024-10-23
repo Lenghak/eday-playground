@@ -5,6 +5,7 @@ import {
   LogoDarkNoBackground,
   LogoLightNoBackground,
 } from "@/components/custom/logo";
+import { ThemeToggle } from "@/components/custom/theme-toggle";
 import { BorderBeam } from "@/components/magic-ui/border-beam";
 import {
   Card,
@@ -29,6 +30,7 @@ export default function SignInLayout({ children }: PropsWithChildren) {
         className="h-full"
       >
         <Card className="relative w-full max-w-screen-xs items-center">
+          <ThemeToggle className="absolute right-0 top-0 rounded-full" />
           <CardHeader className="flex w-full flex-col items-center">
             <Logo className="mb-2 py-4">
               <LogoDarkNoBackground
