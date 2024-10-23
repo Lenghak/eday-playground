@@ -36,7 +36,10 @@ export function ThemeToggle({ className, ...props }: ThemeToggleProps) {
             <span className="sr-only">Toggle theme</span>
           </Button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent align="end">
+        <DropdownMenuContent
+          align="end"
+          className="font-semibold"
+        >
           <DropdownMenuItem onClick={() => setTheme("light")}>
             <SunMediumIcon className="mr-3 size-4" />
             <span>Light</span>

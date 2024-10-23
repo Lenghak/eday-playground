@@ -45,7 +45,7 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="/svg/logo-light.svg"
+          content="/svg/logo-light-background.svg"
         />
         <meta
           property="og:url"
@@ -62,13 +62,13 @@ export default function RootLayout({
         <link
           rel="icon"
           type="image/svg+xml"
-          href="/svg/logo-light-no-background.svg"
+          href="/svg/logo-light-background.svg"
           media="(prefers-color-scheme: light)"
         />
         <link
           rel="icon"
           type="image/svg+xml"
-          href="/svg/logo-dark-no-background.svg"
+          href="/svg/logo-dark-background.svg"
           media="(prefers-color-scheme: dark)"
         />
       </head>

@@ -29,8 +29,11 @@ export default function SignInLayout({ children }: PropsWithChildren) {
         items="center"
         className="h-full"
       >
-        <Card className="relative w-full max-w-screen-xs items-center">
-          <ThemeToggle className="absolute right-0 top-0 rounded-full" />
+        <Card className="relative w-full max-w-screen-xs items-center overflow-hidden">
+          <ThemeToggle
+            className="absolute right-0 top-0 rounded-xl rounded-br-none rounded-tl-none border border-r-0 border-t-0"
+            variant={"soft"}
+          />
           <CardHeader className="flex w-full flex-col items-center">
             <Logo className="mb-2 py-4">
               <LogoDarkNoBackground

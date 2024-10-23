@@ -93,6 +93,12 @@ const buttonVariants = cva(
           "bg-transparent text-secondary-foreground hover:bg-secondary/30",
       },
       {
+        variant: "soft",
+        color: "secondary",
+        className:
+          "bg-secondary/20 text-secondary-foreground hover:bg-secondary/30",
+      },
+      {
         variant: "link",
         color: "secondary",
         className:
@@ -102,11 +108,6 @@ const buttonVariants = cva(
         variant: "filled",
         color: "destructive",
         className: "hover:bg-destructive/90",
-      },
-      {
-        variant: "soft",
-        color: "secondary",
-        className: "bg-secondary/20 text-secondary hover:bg-secondary/30",
       },
       {
         variant: "soft",
