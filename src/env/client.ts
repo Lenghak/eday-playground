@@ -3,7 +3,8 @@ import { z } from "zod";
 
 export const env = createEnv({
   client: {
-    NEXT_PUBLIC_ORIGIN: z.string().url(),
+    NEXT_PUBLIC_ORIGIN_URL: z.string().url(),
+    NEXT_PUBLIC_API_URL: z.string().url(),
   },
 
   /**
@@ -11,6 +12,7 @@ export const env = createEnv({
    * `process.env` or `import.meta.env`.
    */
   runtimeEnv: {
-    NEXT_PUBLIC_ORIGIN: process.env.NEXT_PUBLIC_ORIGIN,
+    NEXT_PUBLIC_ORIGIN_URL: process.env.NEXT_PUBLIC_ORIGIN_URL,
+    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
   },
 });

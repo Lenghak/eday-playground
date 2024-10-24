@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 
 import { sans } from "@/app/fonts";
+import { QueryClientProvider } from "@/providers/query-client-provider";
 import { ThemeProvider } from "@/providers/themes-provider";
 import { SessionProvider } from "next-auth/react";
 
@@ -79,7 +80,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <SessionProvider>{children}</SessionProvider>
+          <SessionProvider>
+            <QueryClientProvider>{children}</QueryClientProvider>
+          </SessionProvider>
         </ThemeProvider>
       </body>
     </html>

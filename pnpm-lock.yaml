@@ -296,6 +296,9 @@ importers:
       next-themes:
         specifier: ^0.3.0
         version: 0.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      nuqs:
+        specifier: ^2.0.4
+        version: 2.0.4(next@15.0.1(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       prismjs:
         specifier: ^1.29.0
         version: 1.29.0
@@ -4647,6 +4650,21 @@ packages:
 
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
+
+  nuqs@2.0.4:
+    resolution: {integrity: sha512-d0GQCOHW9o04slcTe9nfTgskCT/09K5pOMXu671Y8p7d/48KEKJLzZjklWXIt3pFjYaplErMZpXiLiYo0w8uQQ==}
+    peerDependencies:
+      '@remix-run/react': '>= 2'
+      next: '>= 14.2.0'
+      react: '>= 18.2.0'
+      react-router-dom: '>= 6'
+    peerDependenciesMeta:
+      '@remix-run/react':
+        optional: true
+      next:
+        optional: true
+      react-router-dom:
+        optional: true
 
   oauth4webapi@3.1.1:
     resolution: {integrity: sha512-0h4FZjsntbKQ5IHGM9mFT7uOwQCRdcTG7YhC0xXlWIcCch24wUa6Vggaipa3Sw6Ab7nEnmO4rctROmyuHBfP7Q==}
@@ -10341,6 +10359,13 @@ snapshots:
   nth-check@2.1.1:
     dependencies:
       boolbase: 1.0.0
+
+  nuqs@2.0.4(next@15.0.1(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
+    dependencies:
+      mitt: 3.0.1
+      react: 18.3.1
+    optionalDependencies:
+      next: 15.0.1(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
   oauth4webapi@3.1.1: {}
 

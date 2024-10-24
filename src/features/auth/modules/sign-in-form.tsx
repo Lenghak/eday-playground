@@ -7,7 +7,7 @@ import { Flex } from "@/components/ui/flex";
 
 import { cn } from "@/lib/utils";
 
-import { signInAction } from "@/features/auth/actions/sign-in-action";
+import { signIn } from "@/actions/auth";
 import { OAuthButton } from "@/features/auth/components/oauth-button";
 import {
   oAuthSignInResolver,
@@ -28,7 +28,7 @@ export function SignInForm({ className, ...props }: SignInFormProps) {
   });
 
   const handleSubmit = useCallback(
-    async ({ provider }: OAuthSignInSchema) => await signInAction(provider),
+    async ({ provider }: OAuthSignInSchema) => await signIn(provider),
     [],
   );
 

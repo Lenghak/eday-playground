@@ -46,6 +46,12 @@
       "color": "green-600",
       "folderNames": ["action", "actions"]
     },
+    {
+      "name": "providers",
+      "base": "context",
+      "color": "pink-400",
+      "folderNames": ["providers", "provider"]
+    },
   ],
   "material-icon-theme.files.customClones" : [
     {
